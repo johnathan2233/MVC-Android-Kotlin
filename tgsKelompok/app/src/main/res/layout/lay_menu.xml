@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_centerInParent="true"
+        />
+    <ScrollView android:layout_width="match_parent"
+                android:id="@+id/scrol"
+                android:layout_height="830dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        />
+
+    </ScrollView>
+    <Button android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rad"
+            android:text="LogOut"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+        android:id="@+id/btn_logout"
+            android:layout_below="@+id/scrol"
+    />
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:background="#fff"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="16dp"
+        android:id="@+id/card"
+        android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:background="#CAB9AF"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content">
+        <ImageView
+                android:id="@+id/imgItem"
+                android:layout_width="172dp"
+                android:layout_height="165dp"
+                android:padding="15dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/logo2"
+        />
+
+        <TextView
+                android:id="@+id/tvNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:padding="15dp"
+                android:textStyle="bold"
+                android:text="Judul"
+                android:textColor="#000"
+                android:layout_toRightOf="@+id/imgItem"
+        />
+
+
+    <TextView
+            android:id="@+id/tvKategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kategori"
+            android:textSize="20dp"
+            android:layout_marginStart="18dp"
+            android:textColor="#0C0C0C"
+            android:layout_toRightOf="@+id/imgItem"
+            android:layout_below="@+id/tvNama"
+    />
+    <TextView
+            android:id="@+id/tvIsi"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:padding="15dp"
+            android:text="Isi berita"
+            android:textSize="1px"
+            android:maxEms="2000"
+            android:textColor="#0C0C0C"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/imgItem"
+            android:layout_below="@+id/tvKategori"
+    />
+    <Button android:layout_width="300dp"
+            android:layout_height="67dp"
+            android:id="@+id/btn_detail"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/tvNama"
+            android:text="Read More"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@drawable/rad"
+    />
+
+        </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>

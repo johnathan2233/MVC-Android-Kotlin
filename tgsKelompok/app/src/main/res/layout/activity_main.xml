@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:background="#324353"
+                >
+
+    <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#324353"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+
+        <TextView
+                android:id="@+id/txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textSize="1dp"
+                android:textStyle="bold"
+        />
+
+        <TextView
+                android:id="@+id/txt_nim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:text="Email"
+        />
+
+        <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rad"
+                android:text="Logout"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+
+    ></RelativeLayout>
+    <Button android:layout_width="100dp"
+            android:text="Berita"
+            android:background="@drawable/rad"
+            android:layout_marginTop="200dp"
+            android:id="@+id/btn_berita"
+            android:layout_height="wrap_content"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_recyclerview" android:layout_marginTop="1341dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
